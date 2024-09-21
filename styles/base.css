@@ -53,17 +53,17 @@ footer {
 }
 
 .navbar a:hover {
-    background-color: ;
+    background-color: white;
     color: black;
 }
 
 main {
     display: flex;
-    grid-column: 2/3;
     background-color: white;
     padding: 10px;
     justify-content: center;
     width: 940px;
+    margin: 0 auto;
 }
 
 .card {
@@ -71,6 +71,56 @@ main {
     border: solid black;
     overflow: hidden;
     margin: 0 15px;
+}
+
+#card-1 {
+    width: 630px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.about-me p {
+    width: 425px;
+}
+
+#profile-img {
+    max-height: 200px;
+}
+
+.place-header {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.place-header > * {
+    margin: 0;
+}
+
+.place-header hr {
+    width: 75%;
+    margin: auto;
+}
+
+.about-place {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.about-place figure {
+    margin-left: 0;
+}
+
+#place-flag {
+    max-height: 100px;
+}
+
+#card-2 {
+    width: 300px;
 }
 
 .card-header {
@@ -82,4 +132,11 @@ main {
 
 .card-header h2 {
     margin: 0;
+}
+
+#card-2 .card-content {
+    display: flex;
+    align-items: center;
+    line-height: 2;
+    font-size:larger;
 }
