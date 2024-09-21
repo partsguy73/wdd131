@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Timothy J. Scott" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals. Timothy J. Scott. A home page design that includes an about me section."
+    />
     <title>WDD 131 - Dynamic Web Fundamentals - Timothy J. Scott</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -17,6 +22,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="styles/base.css" />
+    <script defer src="scripts/getdates.js"></script>
   </head>
   <body>
     <div class="parent">
@@ -40,11 +46,45 @@
           </ul>
         </nav>
       </header>
-      <div class="left-sidebar"></div>
-      <main>I am main content</main>
-      <div class="right-sidebar"></div>
-      <footer>I am footer</footer>
+      <main>
+        <div class="card">
+          <div class="card-header">
+            <h2>About Me</h2>
+          </div>
+          <div class="card-content">
+            <div class="about-me">
+              <p>My name is Tim Scott</p>
+              <img src="" alt="" />
+            </div>
+            <div class="about-place">
+              <h4></h4>
+              <img src="" alt="" />
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h2>Web Dev Resources</h2>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          © <span id="currentyear"></span>
+          <i class="fa-solid fa-bell"></i> Timothy John Scott
+          <i class="fa-solid fa-bell"></i> United States of America
+        </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </footer>
     </div>
-    <script src="scripts/getdates.js"></script>
   </body>
 </html>
