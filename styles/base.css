@@ -1,0 +1,92 @@
+/* base.css */
+
+* {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    color: red;
+}
+
+html {
+    font-family: "Dosis", sans-serif;
+}
+.parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100px 1fr 100px;
+    height: 100vh;
+}
+
+header {
+    grid-column: 1/4;
+    background-color: ;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    grid-column: 1/4;
+    background-color: ;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: ;
+    color: black;
+}
+
+.left-sidebar {
+    grid-column: 1/2;
+    background-color: ;
+    padding: 10px;
+}
+
+main {
+    grid-column: 2/3;
+    background-color: ;
+    padding: 10px;
+}
+
+.right-sidebar {
+    grid-column: 3/4;
+    background-color: ;
+    padding: 10px;
+}
+
+footer {
+    background-color: ;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    header, footer, .left-sidebar, main, .right-sidebar {
+        grid-column: 1/2;
+    }
+}
