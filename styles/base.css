@@ -198,3 +198,30 @@ main {
         margin: 10px 0;
     }
 }
+
+@media (max-width: 375px) {
+
+    header,
+    footer {
+        padding: 5px;
+    }
+
+    .navbar a {
+        padding: 8px;
+    }
+
+    .card {
+        margin: 5px 0;
+    }
+
+    .about-me,
+    .about-place {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me p,
+    .about-place figure {
+        width: 100%;
+    }
+}
