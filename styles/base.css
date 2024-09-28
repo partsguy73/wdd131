@@ -62,7 +62,7 @@ main {
     background-color: white;
     padding: 10px;
     justify-content: center;
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
 }
 
