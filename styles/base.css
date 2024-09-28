@@ -5,9 +5,8 @@ html {
     font-family: "Dosis", sans-serif;
 }
 
-.parent {
-    display: grid;
-    justify-content: center;
+body {
+    width: 100vw;
 }
 
 header {
@@ -15,7 +14,8 @@ header {
     background-color: darkslategrey;
     padding: 10px;
     text-align: center;
-    width: 940px;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 header h1 {
@@ -28,7 +28,8 @@ footer {
     padding: 10px;
     text-align: center;
     color: white;
-    width: 940px;
+    max-width: 940px;
+    margin: 0 auto;
 
 }
 
@@ -37,6 +38,7 @@ footer {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: black;
 }
@@ -58,7 +60,6 @@ footer {
 }
 
 main {
-    display: flex;
     background-color: white;
     padding: 10px;
     justify-content: center;
@@ -74,11 +75,13 @@ main {
 }
 
 #card-1 {
-    width: 630px;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .about-me {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px;
 }
@@ -107,6 +110,7 @@ main {
 
 .about-place {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px;
 }
@@ -120,7 +124,7 @@ main {
 }
 
 #card-2 {
-    width: 300px;
+    max-width: 300px;
 }
 
 .card-header {
@@ -128,6 +132,10 @@ main {
     background-color: darkslategrey;
     color: white;
     justify-content: center;
+}
+
+.card-content p {
+    max-width: 400px;
 }
 
 .card-header h2 {
@@ -142,3 +150,9 @@ main {
 }
 
 /* Media Queries */
+@media screen and (min-width: 640px) {
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
