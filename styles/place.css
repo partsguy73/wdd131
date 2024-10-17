@@ -10,12 +10,11 @@ header {
     color: white;
     padding: 1em;
     text-align: center;
-    display: flex;
-    align-items: center;
+    border-bottom: 10px solid darkslateblue;
 }
 
 main {
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .hero-image {
@@ -25,6 +24,16 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    border-bottom: 10px solid darkslateblue;
+}
+
+.hero-image {
+    vertical-align: middle;
+    line-height: 0;
+}
+
+.hero-image img {
+    width: 100%;
 }
 
 .data,
@@ -32,7 +41,11 @@ main {
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
-    width: 100vw;
+    /* width: 100vw; */
+}
+
+.weather {
+    text-align: center;
 }
 
 .data h2,
@@ -41,8 +54,14 @@ main {
     text-align: center;
 }
 
-.weather img {
+.weather-emoticon {
     display: none;
+    font-size: 100px;
+}
+
+.weather img {
+    width: 100px;
+    justify-items: center;
 }
 
 .data ul,
