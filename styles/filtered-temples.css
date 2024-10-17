@@ -1,0 +1,114 @@
+/* Global styling */
+
+html {
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+header {
+    background-color: darkslategrey;
+    color: white;
+    padding: 1em;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+
+.menu.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.hamburger {
+    display: flex;
+    cursor: pointer;
+    font-size: 1.5em;
+    float: right;
+}
+
+.menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    width: 100%;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: x-large;
+}
+
+.menu li a:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    padding: 1em;
+}
+
+.temples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+figure {
+    margin: auto;
+    text-align: center;
+    width: 200px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-style: italic;
+    text-align: center;
+}
+
+footer {
+    background-color: darkslategrey;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
