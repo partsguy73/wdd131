@@ -7,9 +7,6 @@ function toggleMenu() {
     pageHeader.classList.toggle("hidden");
 }
 
-const templesElement = document.querySelector(#temples);
-let templeList = []
-
 const templeList = [
     {
         templeName: "Aba Nigeria",
@@ -96,5 +93,10 @@ const templeList = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
 
-    // Add more temple objects here...
+    function addImages() {
+        const templesDiv = document.getElementById('temples');
+        imageUrls.forEach(url => {
+            const img = document.createElement('img')
+        })
+    }
 ];
