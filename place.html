@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Timothy J. Scott">
-    <meta
-      name="description"
-      content="WDD 131 - Dynamic Web Fundamentals. Timothy J. Scott. A page used to describe the place that I call home.">
-    <title>WDD 131 - Place - Timothy J. Scott</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/place.css" />
-    <link rel="stylesheet" href="styles/place-large.css">
-    <script defer src="scripts/getdates.js"></script>
-    <script defer src="scripts/place.js"></script>
-  </head>
-  <body>
-    <header>
-        <h1>St George, Utah</h1>
-    </header>
-    <main>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Timothy J. Scott">
+  <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals. Timothy J. Scott. A page used to describe the place that I call home.">
+  <title>WDD 131 - Place - Timothy J. Scott</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css" />
+  <link rel="stylesheet" href="styles/place-large.css">
+  <script defer src="scripts/getdates.js"></script>
+  <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>St George, Utah</h1>
+  </header>
+  <main>
+    <div class="container">
       <div class="hero-image">
         <picture>
           <source media="(max-width: 600px)" srcset="images/st_george_small.webp">
@@ -32,33 +34,35 @@
       <div class="data">
         <h2>Data</h2>
         <ul>
-          <li><span>Area:</span><span>199.82 km²</span></li>
-          <li><span>Population:</span><span>95,342</span></li>
-          <li><span>Language:</span><span>English</span></li>
-          <li><span>Currency:</span><span>US Dollar</span></li>
-          <li><span>Time Zone:</span><span>UTC-07:00 (Mountain)</span></li>
-          <li><span>Calling Code:</span><span>+1(435)</span></li>
-          <li><span>Internet TLD:</span><span>.us</span></li>
+          <li><span>Area:&nbsp;</span><span>199.82 km²</span></li>
+          <li><span>Population:&nbsp;</span><span>95,342</span></li>
+          <li><span>Language:&nbsp;</span><span>English</span></li>
+          <li><span>Currency:&nbsp;</span><span>US Dollar</span></li>
+          <li><span>Time Zone:&nbsp;</span><span>UTC-07:00 (Mountain)</span></li>
+          <li><span>Calling Code:&nbsp;</span><span>+1(435)</span></li>
+          <li><span>Internet TLD:&nbsp;</span><span>.us</span></li>
         </ul>
       </div>
       <div class="weather">
         <h2>Weather<span class="weather-emoticon">&#9925;</span></h2>
         <img src="images/partly_sunny.svg" alt="Weather Icon">
         <ul>
-          <li><span>Tempurature:</span><span>37°C</span></li>
-          <li><span>Conditions:</span><span>Sunny</span></li>
-          <li><span>Wind:</span><span>10km/h</span></li>
-          <li><span>Wind Chill:</span><span>value</span></li>
+          <li><span>Temperature: &nbsp;</span><span id="temperature"> 37</span><span>°C</span></li>
+          <li><span>Conditions: &nbsp;</span><span>Sunny</span></li>
+          <li><span>Wind: &nbsp;</span><span id="windSpeed">10</span><span> &nbsp;km/h</span></li>
+          <li><span>Wind Chill: &nbsp; </span><span id="windChillResult"></span></li>
         </ul>
       </div>
-    </main>
-    <footer>
-        <p>
-            © <span id="currentyear"></span>
-            | Timothy John Scott
-            | United States of America
-          </p>
-          <p>Last Modification: <span id="lastModified"></span></p>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <p>
+      © <span id="currentyear"></span>
+      | Timothy John Scott
+      | United States of America
+    </p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+
 </html>

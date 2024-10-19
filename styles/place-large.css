@@ -1,4 +1,4 @@
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 768px) {
     main {
         display: block;
 
@@ -6,23 +6,30 @@
 
     .hero-image {
         display: flex;
-        position: relative;
         z-index: -1;
     }
 
     .data {
-        display: flex;
         top: 5%;
-        left: 5%;
+        left: 2%;
         position: absolute;
         background-color: white;
+        font-size: smaller;
     }
 
     .weather {
-        display: flex;
         bottom: 5%;
-        right: 5%;
+        right: 2%;
         position: absolute;
         background-color: white;
+        font-size: smaller;
+    }
+
+    .weather img {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " \26c5";
     }
 }

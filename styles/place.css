@@ -18,6 +18,10 @@ header {
     border-bottom: 10px solid darkslateblue;
 }
 
+.container {
+    position: relative;
+}
+
 .hero-image {
     width: 100%;
     height: auto;
@@ -26,21 +30,23 @@ header {
     background-size: cover;
     position: relative;
     border-bottom: 10px solid darkslateblue;
-}
-
-.hero-image {
     vertical-align: middle;
     line-height: 0;
 }
 
+.hero-image picture {
+    width: 100vw;
+}
+
 .hero-image img {
     width: 100%;
+    margin: 0 auto;
 }
 
 .data,
 .weather {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 12px;
     margin-bottom: 20px;
 }
 
@@ -74,7 +80,7 @@ header {
 .weather li {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 footer {
