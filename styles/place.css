@@ -30,7 +30,6 @@ header {
     background-size: cover;
     position: relative;
     border-bottom: 10px solid var(--dsblue);
-    vertical-align: middle;
     line-height: 0;
 }
 
