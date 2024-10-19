@@ -21,7 +21,7 @@ const templeList = [
         location: "Cedar City, Utah, United States",
         dedicated: "2017, December, 10",
         area: 42657,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cedar-city-utah/400x225/Cedar-City-1978603.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cedar-city-utah/400x250/Cedar-City-1978603.jpg"
     },
     {
         templeName: "Manti Utah",
@@ -37,7 +37,7 @@ const templeList = [
         dedicated: "2015, June, 7",
         area: 96630,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-exterior-1416671-wallpaper.jpg"
     },
     {
         templeName: "Yigo Guam",
@@ -66,7 +66,7 @@ const templeList = [
         location: "St. George, Utah, United States",
         dedicated: "1877, April, 6",
         area: 142000,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/1280x800/st-george-temple-lds-149536-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/400x250/st-george-temple-lds-149536-wallpaper.jpg"
     },
     {
         templeName: "Washington D.C.",
@@ -92,11 +92,46 @@ const templeList = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-
-    function addImages() {
-        const templesDiv = document.getElementById('temples');
-        imageUrls.forEach(url => {
-            const img = document.createElement('img')
-        })
-    }
 ];
+
+function showTemples(temples) {
+    const templesDiv = document.getElementById('temples');
+    templesDiv.innerHTML = "";
+    temples.forEach(temple => {
+        const imgElement = document.createElement('img');
+        imgElement.setAttribute("src", temple.imageUrl);
+        imgElement.setAttribute("alt", temple.templeName);
+        imgElement.setAttribute("loading", "lazy");
+        imgElement.setAttribute("width", "250");
+        imgElement.setAttribute("height", "141");
+        const nameElement = document.createElement('h2')
+        nameElement.innerText = temple.templeName;
+        const locationElement = document.createElement('p')
+        locationElement.innerText = 'Location: ' + temple.location;
+        const dedicatedElement = document.createElement('p')
+        dedicatedElement.innerText = 'Dedicated: ' + temple.dedicated;
+        const areaElement = document.createElement('p')
+        areaElement.innerText = 'Area: ' + temple.area + ' sq ft';
+        const cardElement = document.createElement('div');
+        cardElement.setAttribute("class", "temple-card")
+        cardElement.appendChild(nameElement);
+        cardElement.appendChild(locationElement);
+        cardElement.appendChild(dedicatedElement);
+        cardElement.appendChild(areaElement);
+        cardElement.appendChild(imgElement);
+        templesDiv.appendChild(cardElement);
+    });
+};
+
+function showOldTemples() {
+    const oldTemples = templeList.filter(function (temple) {
+        const yearText = temple.dedicated.substring(0, 4);
+        const year = parseInt(yearText);
+        console.log(year);
+        return year <= 1900;
+    });
+    showTemples(oldTemples);
+};
+
+showTemples(templeList);
+

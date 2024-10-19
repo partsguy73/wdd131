@@ -23,6 +23,10 @@ h3 {
     text-align: center;
 }
 
+p {
+    text-align: center;
+}
+
 header {
     background-color: darkslategrey;
     color: white;
@@ -85,26 +89,12 @@ main {
     gap: 10px;
     max-width: 600px;
     width: 100%;
-    margin: 0 auto;
 }
 
-figure {
-    margin: auto;
-    text-align: center;
-    width: 200px;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-}
-
-figcaption {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    font-style: italic;
-    text-align: center;
-}
+/* .temple-card {
+    display: flex;
+    justify-content: centerS;
+} */
 
 footer {
     background-color: darkslategrey;

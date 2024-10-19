@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Temple Album - Timothy J. Scott</title>
-    <meta name="description" content="Week02 assignmnt to design, develop, test and then deploy a temple album page using a selection of temple pictures.">
+    <meta name="description"
+        content="Week02 assignmnt to design, develop, test and then deploy a temple album page using a selection of temple pictures.">
     <meta name="author" content="Timothy J. Scott">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
@@ -14,13 +17,14 @@
     <script src="scripts/filtered-temples.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1 id="page-header">Temple Album</h1>
         <nav>
             <ul class="menu" id="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#old">Old</a></li>
+                <li><a onclick="showOldTemples()">Old</a></li>
                 <li><a href="#new">New</a></li>
                 <li><a href="#large">Large</a></li>
                 <li><a href="#small">Small</a></li>
@@ -30,14 +34,15 @@
     </header>
     <main>
         <h2>Home</h2>
-        <div id="temples"></div>
+        <div class="temples-grid" id="temples"></div>
     </main>
     <footer>
         <p>
-          © <span id="currentyear"></span>
-          | Timothy John Scott  | United States of America
+            © <span id="currentyear"></span>
+            | Timothy John Scott | United States of America
         </p>
         <p>Last Modification: <span id="lastModified"></span></p>
-      </footer>
+    </footer>
 </body>
+
 </html>
