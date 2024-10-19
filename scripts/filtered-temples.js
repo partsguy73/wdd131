@@ -123,14 +123,38 @@ function showTemples(temples) {
     });
 };
 
-function showOldTemples() {
-    const oldTemples = templeList.filter(function (temple) {
-        const yearText = temple.dedicated.substring(0, 4);
-        const year = parseInt(yearText);
-        console.log(year);
-        return year <= 1900;
-    });
-    showTemples(oldTemples);
+function showFilteredTemples(filter) {
+    let filteredTemples = templeList;
+    switch (filter) {
+        case 'old':
+            filteredTemples = templeList.filter(function (temple) {
+                const yearText = temple.dedicated.substring(0, 4);
+                const year = parseInt(yearText);
+                return year <= 1900;
+            });
+            break;
+
+        case 'new':
+            filteredTemples = templeList.filter(function (temple) {
+                const yearText = temple.dedicated.substring(0, 4);
+                const year = parseInt(yearText);
+                return year >= 2000;
+            });
+            break;
+
+        case 'large':
+            filteredTemples = templeList.filter(function (temple) {
+                return temple.area > 90000;
+            });
+            break;
+
+        case 'small':
+            filteredTemples = templeList.filter(function (temple) {
+                return temple.area < 10000;
+            });
+            break;
+    }
+    showTemples(filteredTemples);
 };
 
 showTemples(templeList);
