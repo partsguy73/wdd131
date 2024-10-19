@@ -15,7 +15,7 @@ header {
     color: white;
     padding: 1em;
     text-align: center;
-    border-bottom: 10px solid darkslateblue;
+    border-bottom: 10px solid var(--dsblue);
 }
 
 .container {
@@ -29,7 +29,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    border-bottom: 10px solid darkslateblue;
+    border-bottom: 10px solid var(--dsblue);
     vertical-align: middle;
     line-height: 0;
 }
@@ -84,7 +84,7 @@ header {
 }
 
 footer {
-    background-color: darkslategrey;
+    background-color: var(--dsgrey);
     padding: 10px;
     text-align: center;
     color: white;
