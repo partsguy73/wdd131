@@ -1,0 +1,45 @@
+* {
+    font-family: "Dosis", sans-serif;
+    background-color: #d8e3f3;
+    color: #0f1011;
+}
+
+table.colors {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.colors th, table.colors td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table.colors th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.primary {
+    background-color: #d8e3f3;
+    color: black;
+}
+
+.secondary {
+    background-color: #302c94;
+    color: white;
+}
+
+.accent1 {
+    background-color: #0f1011;
+    color: white;
+}
+
+.accent2 {
+    background-color: #be152c;
+    color: white;
+}
+
+.accent3 {
+    background-color: #cead2e;
+    color: black;
+}
