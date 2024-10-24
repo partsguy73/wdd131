@@ -1,0 +1,96 @@
+:root {
+    --primary: darkslategrey;
+    --secondary: darkslateblue;
+    --header-text: white;
+    --text: black;
+    --background: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Dosis", sans-serif;
+}
+
+header, footer {
+    background-color: var(--primary);
+    color: var(--header-text);
+    padding: 1em;
+    text-align: center;
+    border-bottom: 10px solid var(--secondary);
+}
+
+select, #date, button {
+    font-family: "Dosis", sans-serif;
+}
+
+body {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+form {
+    background-color: var(--background);
+    padding: 10px;
+}
+
+.form-field {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stars {
+    display: flex;  
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.useful-features {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    width: 100%;
+}
+
+button {
+    display: block;
+}
+
+.italic {
+    color: var(--secondary);
+    font-style: italic;
+    font-size: smaller;
+}
+
+.checkbox-spacing {
+    padding-left: 1em;
+    font-weight: 400;
+    
+}
+
+label {
+    font-size: large;
+}
+
+.line-spacing {
+    padding-top: 1em;
+}
