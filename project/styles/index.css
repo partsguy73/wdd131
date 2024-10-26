@@ -25,9 +25,9 @@ h2 {
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
+    margin-top: 1em;
 }
 
 .scroll-container img {
     padding: 10px;
-    margin-top: 1em;
 }
