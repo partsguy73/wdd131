@@ -2,6 +2,24 @@
     width: 100%;
 }
 
+h2 {
+   text-align: center; 
+}
+
+.shows-events {
+    padding-top: 1em;
+}
+
+.event-links {
+    list-style-type: none;
+    padding: 1em;
+}
+
+.event-list {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
 .scroll-container {
     background-color: var(--accents);
     overflow: auto;
@@ -11,4 +29,5 @@
 
 .scroll-container img {
     padding: 10px;
+    margin-top: 1em;
 }
