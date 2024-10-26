@@ -3,7 +3,7 @@
 }
 
 .scroll-container {
-    background-color: #333;
+    background-color: var(--accents);
     overflow: auto;
     white-space: nowrap;
     padding: 10px;

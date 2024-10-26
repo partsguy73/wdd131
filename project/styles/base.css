@@ -13,6 +13,10 @@
     margin: 0;
 }
 
+html {
+    font-family: "Dosis", sans-serif;
+}
+
 body {
     max-width: 1200px;
     margin: 0 auto;
