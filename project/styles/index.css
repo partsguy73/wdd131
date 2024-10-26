@@ -10,6 +10,8 @@ h2 {
 
 .shows-events {
     padding-top: 1em;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .event-links {
@@ -34,6 +36,16 @@ h2 {
     padding: 10px;
 }
 
-hr {
+.line {
     color: var(--secondary);
+}
+
+.button {
+    float: right;
+}
+
+@media screen and (max-width: 424px) {
+    .shows-events {
+        padding: 1em;
+    }
 }
