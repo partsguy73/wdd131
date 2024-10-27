@@ -1,0 +1,71 @@
+/* Main styling */
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Hero section */
+.hero {
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Chorus bio section */
+.chorus-bio {
+    margin-bottom: 2em;
+}
+
+.chorus-bio h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.chorus-bio p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Director bio section */
+.bio-container, .bio-container-reverse {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.bio-container img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.bio-container-reverse img {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.bio-container-reverse {
+    flex-direction: row-reverse;
+}
+
+.bio-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bio-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 640px) {
+    .bio-container, .bio-container-reverse {
+        display: block;
+    }
+
+}
