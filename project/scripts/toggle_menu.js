@@ -3,14 +3,13 @@ function toggleMenu() {
     var cheeseburger = document.getElementById("cheeseburger");
     var isShow = navigation.classList.toggle("show");
     if (isShow) {
-        navigation.classList.remove("hidden");
+        navigation.classList.remove("nav-hidden");
         cheeseburger.innerHTML = '✖';
     }
     else {
-        navigation.classList.add("hidden");
+        navigation.classList.add("nav-hidden");
         cheeseburger.innerHTML = '&#9776;';
     }
-    console.log(isShow);
     var pageHeader = document.getElementById("page-header");
     pageHeader.classList.toggle("hidden");
 }

@@ -38,6 +38,7 @@ h2 {
 
 .line {
     color: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .button {

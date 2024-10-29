@@ -102,6 +102,8 @@ a:active {
     display: none;
 }
 
+
+
 main {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -153,6 +155,10 @@ main {
     .nav-links {
         display: hidden;
         flex-direction: column;
+    }
+
+    .nav-hidden {
+        display: none;
     }
 }
 

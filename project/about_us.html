@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/about_us.css">
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/toggle_menu.js"></script>
 </head>
 
 <body>
@@ -25,9 +26,9 @@
             </a>
         </div>
         <div class="header-container">
-            <h1>Color Country Chorus</h1>
-            <nav class="navigation">
-                <ul class="nav-links">
+            <h1 id="page-header">Color Country Chorus</h1>
+            <nav class="navigation nav-hidden" id="navigation">
+                <ul class="nav-links" id="nav-menu">
                     <li class="links"><a href="index.html">Home</a></li>
                     <li class="links"><a href="about_us.html">About Us</a></li>
                     <li class="links"><a href="events.html">Events</a></li>
@@ -45,47 +46,62 @@
         <section class="hero">
             <img src="images/ccchorus_5.webp" alt="Color Country Chorus Hero Image" class="hero-image">
         </section>
-        <section class="chorus-bio">
-            <h2>About Us</h2>
-            <p>2024 marks the 41st anniversary of the Color Country Chorus, a beloved fixture in the vocal music scene
-                of St. George. The Color Country Chorus graces many events throughout the year. Beyond our annual spring
-                show, we host a cherished Christmas program at the St. George Tabernacle, deliver stirring patriotic
-                music at Memorial Day observances, perform the National Anthem at various sporting events, and make
-                numerous appearances at churches, clubs, and conventions upon request. One of our favorite occasions is
-                Valentine's Day, when quartets from our chorus deliver “Singing Valentines” across the St. George area.
-                These performances bring joy not only to spouses but also to elderly residents and shut-ins, brightening
-                their day with our heartfelt harmonies.</p>
-        </section>
-        <section class="director-bio">
-            <div class="bio-container">
-                <img src="images/chris_img.webp" alt="Chris Leonard - Director" class="director-image">
-                <div class="bio-text">
-                    <h2>Chris Leonard - Chorus Director</h2>
-                    <p>Chris graduated from Dixie State University, with a BS in Music Education and is now the choir director
-                        of the Snow Canyon High School. Originally from northern Nevada, he moved to St. George in 2008
-                        where he met his wife and together built a family that includes three boys. Chris grew up with a
-                        love of singing and composing music. He’s had the opportunity to sing in many different styles,
-                        including jazz, barbershop, opera, art song, and choral. His first taste of complex choral music
-                        was during a state choir festival directed by Eric Whitacre, and he has been hooked on the
-                        nuance of sound ever since. Currently, Chris is directing the Color Country Chorus and sings in
-                        a barbershop quartet and the St. George Chamber singers.</p>
+        <div class="padded">
+            <section class="chorus-bio">
+                <h2>About Us</h2>
+                <p>2024 marks the 41st anniversary of the Color Country Chorus, a beloved fixture in the vocal music
+                    scene
+                    of St. George. The Color Country Chorus graces many events throughout the year. Beyond our annual
+                    spring
+                    show, we host a cherished Christmas program at the St. George Tabernacle, deliver stirring patriotic
+                    music at Memorial Day observances, perform the National Anthem at various sporting events, and make
+                    numerous appearances at churches, clubs, and conventions upon request. One of our favorite occasions
+                    is
+                    Valentine's Day, when quartets from our chorus deliver “Singing Valentines” across the St. George
+                    area.
+                    These performances bring joy not only to spouses but also to elderly residents and shut-ins,
+                    brightening
+                    their day with our heartfelt harmonies.</p>
+            </section>
+            <section class="director-bio">
+                <div class="bio-container">
+                    <img src="images/chris_img.webp" alt="Chris Leonard - Director" class="director-image"
+                        loading="lazy" width="300" height="400">
+                    <div class="bio-text">
+                        <h2>Chris Leonard - Chorus Director</h2>
+                        <p>Chris graduated from Dixie State University, with a BS in Music Education and is now the
+                            choir director
+                            of the Snow Canyon High School. Originally from northern Nevada, he moved to St. George in
+                            2008
+                            where he met his wife and together built a family that includes three boys. Chris grew up
+                            with a
+                            love of singing and composing music. He’s had the opportunity to sing in many different
+                            styles,
+                            including jazz, barbershop, opera, art song, and choral. His first taste of complex choral
+                            music
+                            was during a state choir festival directed by Eric Whitacre, and he has been hooked on the
+                            nuance of sound ever since. Currently, Chris is directing the Color Country Chorus and sings
+                            in
+                            a barbershop quartet and the St. George Chamber singers.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="president-bio">
-            <div class="bio-container-reverse">
-                <img src="images/craig_img.webp" alt="Craig Hurdman - President" class="president-image">
-                <div class="bio-text">
-                    <h2>Craig Hurdman - Chorus President</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section class="president-bio">
+                <div class="bio-container-reverse">
+                    <img src="images/craig_img.webp" alt="Craig Hurdman - President" class="president-image"
+                        loading="lazy" width="300" height="400">
+                    <div class="bio-text">
+                        <h2>Craig Hurdman - Chorus President</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
                 </div>
-            </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footer-nav">

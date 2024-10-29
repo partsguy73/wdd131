@@ -14,18 +14,19 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/events.css">
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/toggle_menu.js"></script>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <a class="icon-link "href="index.html" target="_blank">
+            <a class="icon-link " href="index.html" target="_blank">
                 <img class="img-icon" src="images/chorus_logo.png" alt="Color Country Chorus Logo">
             </a>
         </div>
         <div class="header-container">
-        <h1>Color Country Chorus</h1>
-            <nav class="navigation">
-                <ul class="nav-links">
+            <h1 id="page-header">Color Country Chorus</h1>
+            <nav class="navigation nav-hidden" id="navigation">
+                <ul class="nav-links" id="nav-menu">
                     <li class="links"><a href="index.html">Home</a></li>
                     <li class="links"><a href="about_us.html">About Us</a></li>
                     <li class="links"><a href="events.html">Events</a></li>
