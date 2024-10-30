@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/contact.css">
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/toggle_menu.js"></script>
+    <script defer src="scripts/contact.js"></script>
 </head>
 <body>
     <header>
@@ -40,6 +41,60 @@
         </div>
         <div id="cheeseburger" class="hamburger" onclick="toggleMenu(this)">&#9776;</div>
     </header>
+    <main>
+        <h2>Contact Us</h2>
+        <div class="brand-img">
+            <img src="images/chorus_logo.png" alt="Color Country Chorus Logo" class="logo-img"
+                        loading="lazy" width="250" height="142">
+        </div>
+        <div class="contacts-grid" id="contacts"></div>
+        <form class="reviewForm" method="get" action="review.html">
+            <div class="form-field">
+                <label for="firstName">First Name *</label>
+                <input type="firstName" name="firstName" id="firstName" required>
+            </div>
+            <div class="form-field">
+                <label for="lastName">Last Name *</label>
+                <input type="lastName" name="lastName" id="lastName" required>
+                <br>
+            </div>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email Address *</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+            </div>
+
+            <div class="form-field">
+                <label>What are you interested in?<br><span class="italic">(Check all that
+                        apply)</span></label><br>
+                <div class="useful-features">
+                    <div class="line-spacing">
+                        <input type="checkbox" id="chorus" name="chorus" value="yes"><label class="checkbox-spacing" for="chorus">Hire the chorus for an event</label>
+                    </div>
+                    <div class="line-spacing">
+                        <input type="checkbox" id="quartet" name="quartet" value="yes"><label class="checkbox-spacing" for="quartet">Hire a quartet for an event</label>
+                    </div>
+                    <div class="line-spacing">
+                        <input type="checkbox" id="sing" name="sing" value="yes"><label class="checkbox-spacing" for="sing">I am interested in singing with you</label>
+                    </div>
+                    <div class="line-spacing">
+                        <input type="checkbox" id="support" name="support" value="yes"><label class="checkbox-spacing" for="support">I wish to become a supporter</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label >Any other questions <span class="italic">(Optional)</span><br><textarea class="full-width" id="review" name="review"
+                        rows="4"></textarea></label><br>
+            </div>
+
+            <div class="button">
+                <button id="submitButton" class="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
     <footer>
         <div class="footer-nav">
             <ul class="footer-links">

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Timothy J. Scott">
     <meta name="description"
-      content="WDD 131 - Dynamic Web Fundamentals. Timothy J. Scott. Website redesign for colorcountrychorus.org.">
+        content="WDD 131 - Dynamic Web Fundamentals. Timothy J. Scott. Website redesign for colorcountrychorus.org.">
     <title>WDD 131 - Final Project - Events - Timothy J. Scott</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +17,7 @@
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/toggle_menu.js"></script>
 </head>
+
 <body>
     <header>
         <div class="logo-container">
@@ -44,27 +46,32 @@
         <section class="hero">
             <img src="images/ccchorus_1.webp" alt="Color Country Chorus Events Hero Image" class="hero-image">
         </section>
-        <section class="events-list">
-            <h2>Upcoming Events</h2>
-            <div class="event">
-                <h3>Event Title 1</h3>
-                <p>Date: Lorem ipsum dolor sit amet.</p>
-                <p>Location: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="event">
-                <h3>Event Title 2</h3>
-                <p>Date: Lorem ipsum dolor sit amet.</p>
-                <p>Location: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="event">
-                <h3>Event Title 2</h3>
-                <p>Date: Lorem ipsum dolor sit amet.</p>
-                <p>Location: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </section>
+        <div class="events-container">
+            <section class="events-list">
+                <h2>Upcoming Events</h2>
+                <div class="event">
+                    <h3>Christmas Concert in Tabernacle</h3>
+                    <p>Date: December 5, 2024</p>
+                    <p>Time: 7:00pm</p>
+                    <p>Location: St George Tabernacle</p>
+                    <p>Description: Our annual Christmas Concert to kick off the holiday season</p>
+                </div>
+                <div class="event">
+                    <h3>Spring Fling Concert in the Electric Theater</h3>
+                    <p>Date: April 15, 2025</p>
+                    <p>Time: 7:00pm</p>
+                    <p>Location: The Electric Theater</p>
+                    <p>Description: Annual spring show showcasing our chorus and our quartets</p>
+                </div>
+                <div class="event">
+                    <h3>Regular Weekly Rehearsal</h3>
+                    <p>Date: Every Thurday Night</p>
+                    <p>Time: 7:30pm</p>
+                    <p>Location: American Legion Building</p>
+                    <p>Description: Weekly rehearsal time</p>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footer-nav">
@@ -75,7 +82,7 @@
                 <li class="links"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <div class="legal"> 
+        <div class="legal">
             <div>
                 © <span id="currentyear"></span>
                 | Color Country Chorus
@@ -94,6 +101,7 @@
                 <img class="social-media-img" src="images/youtube_social_square_white.png" alt="YouTube icon">
             </a>
         </div>
-    </footer> 
+    </footer>
 </body>
+
 </html>

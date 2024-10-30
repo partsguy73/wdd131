@@ -1,0 +1,41 @@
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.events-container {
+    padding-top: 1em;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.events-list {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.events-list h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #302c94;
+}
+
+.event {
+    background-color: #d8e3f3;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.event h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #302c94;
+}
+
+.event p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #333;
+}
